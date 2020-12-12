@@ -1,29 +1,56 @@
 .section-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  // padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 p {
   color: $title-text-color;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
-.feature-list {
-  display: flex;
-}
-.list {
-  margin-right: 30px;
 
-  &::before {
-    content: "";
-    display: block;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $accent-background-color;
-    margin-bottom: 30px;
-  }
-  &:last-child {
-    margin-right: 0px;
+.feature-list {
+  // display: flex;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
+
+.list {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.list::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $accent-background-color;
+  margin-bottom: 30px;
+}
+.list:not(:last-child) {
+  margin-bottom: 30px;
+}
+// &:last-child {
+//   margin-right: 0px;
+// }
+
 .icon-antenna::before {
   background-image: url(../images/antenna1.svg);
 }
@@ -45,7 +72,11 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  // margin-bottom: 10px;
 }
 .description {
   font-family: Roboto;
@@ -54,4 +85,5 @@ p {
   line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }

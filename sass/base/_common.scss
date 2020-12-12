@@ -6,6 +6,15 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+:focus,
+:active {
+  outline: none;
 }
 h1,
 h2,
@@ -23,7 +32,6 @@ a {
   text-decoration: none;
 }
 ul {
-  list-style: none;
   padding: 0;
   padding-inline-start: 0px;
   margin-top: 0px;
@@ -42,22 +50,27 @@ p {
 img {
   display: block;
 }
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .page {
+  width: 100%;
   background-color: $wite;
   color: $primary-text-color;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-.header-container,
-.container,
-.footer-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+// .header-container,
+// .container,
+// .footer-container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
 .hero,
 .footer {
   background-color: $title-background-color;

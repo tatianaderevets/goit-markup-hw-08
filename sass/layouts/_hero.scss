@@ -4,14 +4,21 @@
 }
 
 .hero-title {
+  max-width: 360px;
   color: $wite;
   text-align: center;
   font-family: Roboto;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
