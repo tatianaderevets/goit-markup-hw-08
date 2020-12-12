@@ -1,0 +1,27 @@
+.location {
+  color: $wite;
+  text-decoration: none;
+}
+
+.contacts-list {
+  margin-bottom: 9px;
+}
+
+.contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.link {
+  color: $accent-text-third;
+  text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

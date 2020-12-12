@@ -1,0 +1,222 @@
+.modal {
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $wite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: animate 100ms;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $wite;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover .close-img {
+    fill: $accent-text-first;
+  }
+}
+.close-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  fill: $primary-text-color;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.order-form-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+.form-field {
+  position: relative;
+  width: 448px;
+  margin: 0 auto 10px;
+}
+.form-label {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $title-text-color;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-text-first;
+  }
+}
+
+.text-area::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-name-img {
+  position: absolute;
+  top: 32px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+}
+.modal-tel-img {
+  position: absolute;
+  top: 32px;
+  left: 14px;
+  width: 13px;
+  height: 13px;
+}
+.modal-email-img {
+  position: absolute;
+  top: 32px;
+  left: 14px;
+  width: 15px;
+  height: 12px;
+}
+.form-input.name:hover {
+  border-color: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.form-input.name:hover + .modal-name-img,
+.form-input.name:focus + .modal-name-img {
+  fill: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.form-input.email:hover {
+  border-color: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.form-input.email:hover + .modal-email-img,
+.form-input.email:focus + .modal-email-img {
+  fill: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.form-input.tel:hover {
+  border-color: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.form-input.tel:hover + .modal-tel-img,
+.form-input.tel:focus + .modal-tel-img {
+  fill: $accent-text-first;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.send-order {
+  margin-top: 30px;
+  text-align: center;
+}
+.send-order-btn {
+  padding: 10px 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $wite;
+  background: $accent-text-first;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-field {
+  position: relative;
+}
+.checkbox-input {
+  position: absolute;
+  appearance: none;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.license-accent {
+  color: $accent-text-first;
+  text-decoration: underline;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-color: $accent-text-first;
+  background-image: url(../images/Vectorok.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accent-text-first;
+}
+
+.text-area {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,32 @@
+.income {
+  flex-flow: column;
+  display: inline-block;
+}
+.income-title {
+  color: $wite;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.income .social-links {
+  margin-left: 70px;
+}
+.footer-social-links .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-links .social-link + .social-link {
+  margin-left: 10px;
+}
+
+.foot .icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.foot .social-icon {
+  fill: $wite;
+}

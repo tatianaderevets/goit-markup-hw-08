@@ -1,0 +1,30 @@
+.contact-link {
+  display: flex;
+  margin-left: auto;
+
+  .item + .item {
+    margin-left: 50px;
+  }
+  .link {
+    color: $title-text-color;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.link:hover,
+.link:focus {
+  color: $accent-text-first;
+}
+.icon-header {
+  margin-right: 10px;
+  fill: $title-text-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover .icon-header,
+.link:focus.icon-header {
+  fill: $accent-text-first;
+}

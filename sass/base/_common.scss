@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-text-color;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+li {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+
+.page {
+  background-color: $wite;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.header-container,
+.container,
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero,
+.footer {
+  background-color: $title-background-color;
+}
+.site-nav,
+.contact-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter-icon {
+  width: 20px;
+  height: 16px;
+}
+.facebook-icon {
+  width: 20px;
+  height: 40px;
+}
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+}

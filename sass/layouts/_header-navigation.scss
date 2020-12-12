@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
+  .item + .item {
+    margin-left: 50px;
+  }
+}
+
+.nav-link {
+  color: $primary-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-text-first;
+  }
+}
+
+.nav-link.current {
+  color: $accent-text-first;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: $accent-text-first;
+    border-radius: 2px;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
