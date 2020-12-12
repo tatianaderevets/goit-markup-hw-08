@@ -14,13 +14,11 @@
   width: calc((100% - 30px) / 2);
   height: 90px;
   margin-bottom: 30px;
-  margin-bottom:
   border: 1px solid $icon-color;
   border-radius: 4px;
-  
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
 
   &:nth-child(2n + 1) {
     margin-right: 30px;
@@ -29,7 +27,7 @@
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
- 
+
   @media screen and(min-width: 768px) {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
@@ -62,9 +60,8 @@
 }
 
 .svg-clients:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-
+  margin-bottom: 0;
+}
 
 .icon-clients {
   fill: $icon-color;

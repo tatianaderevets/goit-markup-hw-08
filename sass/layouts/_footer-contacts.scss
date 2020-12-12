@@ -1,13 +1,6 @@
 .contacts-container {
-  @media screen and(min-width:768px) {
-    width: 50%;
-  }
-  @media screen and(min-width:1200px) {
-    width: 25%;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: left;
-  }
+  text-align: center;
+  margin-bottom: 60px;
 }
 .location {
   color: $wite;

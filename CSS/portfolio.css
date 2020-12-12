@@ -103,30 +103,14 @@ p {
   height: 20px;
 }
 
-@media screen and (min-width: 768) {
-  .subscription-form {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1200) {
-  .subscription-form {
-    padding-bottom: 0;
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 768) {
-  .subscribe-form {
-    width: 100%;
-  }
+.subscription-form {
+  max-width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe-form {
-    display: flex;
+  .subscription-form {
+    margin-left: 93px;
   }
 }
 
@@ -140,19 +124,12 @@ p {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .subscription {
-    text-align: left;
-  }
-}
-
 .subscription-input {
-  width: 100%;
+  margin-bottom: 20px;
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+  width: 358px;
   height: 50px;
-  margin-bottom: 20px;
-  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -170,22 +147,12 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 768px) {
-  .subscription-input {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .subscription-input {
-    width: 358px;
-  }
-}
-
 .subscription-button {
   display: inline-flex;
-  padding-left: auto;
-  padding-right: auto;
+  align-items: center;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
   color: #ffffff;
   background-color: #2196f3;
   background-position: 160px center;
@@ -194,29 +161,17 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
   width: 200px;
   height: 50px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   position: relative;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .subscription-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .subscription-button {
-    align-self: center;
-    margin-top: 35px;
     margin-left: 12px;
-    margin-right: 0;
   }
 }
 
@@ -504,8 +459,16 @@ button:focus {
   padding-bottom: 60px;
 }
 
-.footer-container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
 }
 
 .logo-footer {
@@ -519,19 +482,9 @@ button:focus {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .contacts-container {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts-container {
-    width: 25%;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: left;
-  }
+.contacts-container {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .location {
@@ -563,21 +516,14 @@ button:focus {
 }
 
 .income {
+  text-align: center;
   margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .income {
-    width: 0%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .income {
-    width: 25%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    flex-flow: column;
+    display: inline-block;
   }
 }
 
@@ -588,21 +534,18 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .income-title {
-    text-align: left;
+    margin-left: 70px;
   }
 }
 
-.social-links {
-  display: inline-flex;
-}
-
 @media screen and (min-width: 1200px) {
-  .social-links {
-    display: flex;
+  .income .social-links {
+    margin-left: 70px;
   }
 }
 

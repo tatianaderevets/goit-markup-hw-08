@@ -1,9 +1,9 @@
 .subscription-button {
   display: inline-flex;
-  // align-items: center;
-  // text-align: center;
-  padding-left: auto;
-  padding-right: auto;
+  align-items: center;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
   color: $wite;
   background-color: $accent-text-first;
   background-position: 160px center;
@@ -12,24 +12,16 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
+
   width: 200px;
   height: 50px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   position: relative;
-  cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
   @media screen and (min-width: 1200px) {
-    align-self: center;
-    margin-top: 35px;
     margin-left: 12px;
-    margin-right: 0;
   }
 }
 .text-button {
