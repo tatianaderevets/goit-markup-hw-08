@@ -1,16 +1,28 @@
 .contact-link {
-  display: flex;
   margin-left: auto;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 
   .item + .item {
-    margin-left: 50px;
+    @media screen and(min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
+  .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
   .link {
     color: $title-text-color;
     text-decoration: none;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 .link:hover,

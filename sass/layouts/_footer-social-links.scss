@@ -2,9 +2,15 @@
   text-align: center;
   margin-bottom: 60px;
 
+  @media screen and(min-width: 768px) {
+    margin-right: 74px;
+    text-align: center;
+  }
+
   @media screen and(min-width: 1200px) {
-    flex-flow: column;
-    display: inline-block;
+    width: 206px;
+    margin-top: 12px;
+    text-align: left;
   }
 }
 .income-title {
@@ -15,6 +21,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 
   @media screen and(min-width: 1200px) {
     margin-left: 70px;

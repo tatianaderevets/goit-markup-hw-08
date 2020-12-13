@@ -1,10 +1,15 @@
 .nav {
-  display: flex;
-  align-items: center;
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
 }
+
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 
   .item + .item {
     margin-left: 50px;

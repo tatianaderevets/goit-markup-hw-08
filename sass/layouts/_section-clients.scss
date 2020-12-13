@@ -1,7 +1,11 @@
 .section-clients {
   background-color: #fff;
-  padding-top: 97px;
-  padding-bottom: 91px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .list-clients {
   display: flex;
@@ -31,6 +35,16 @@
   @media screen and(min-width: 768px) {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+  }
+  &:nth-child(3n + 3) {
+    @media screen and(min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+  &:nth-child(4) {
+    @media screen and(min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-child(3n) {
