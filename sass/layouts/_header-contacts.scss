@@ -1,9 +1,21 @@
 .contact-link {
-  margin-left: auto;
+  // margin-left: auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  @media screen and(min-width: 768px) {
+    margin-left: auto;
+  }
+
   @media screen and(min-width: 1200px) {
     display: flex;
   }
-
+  .item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
   .item + .item {
     @media screen and(min-width: 1200px) {
       margin-left: 50px;

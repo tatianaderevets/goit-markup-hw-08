@@ -10,49 +10,50 @@
     <link rel="stylesheet" href="./CSS/portfolio.min.css">
 </head>
 <body class="page">
-    <header class="header">
-        <div class="container page-header">
-            <a href="./index.html " class="logo-header"> <span class="logo-top">Web</span> Studio</a>
-            <div class="menu-container">
-                <nav class="nav">
-     
-                    <button type="button" aria-controls="menu-container" class="burger-btn is-open" data-menu-button>
-                  <svg width="24" height="16" aria-label="переключа
-                                        тель мобильного меню" class="burger-btn-icon">
-                    <use class="close-burger-icon" href="./img/icons/symbol-defs.svg#burger-btn" />
-                    <use class="burger-icon" href="./img/icons/symbol-defs.svg#close-burger-btn" />
-                  </svg>
-                </button>
-                    <div class="menu" id="menu-container" data-menu>
-                        <ul class="site-nav">
-                            <li class="item"><a href="./index.html" class="nav-link ">Студия</a></li>
-                            <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-                            <li class="item"><a href="#contacts" class="nav-link">Контакты</a></li>
-                        </ul>
-                </nav>
-                <ul class="contact-link">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="link">
-                            <svg class="icon-header" width="16" height="12">
-                                <use href="./images/svg/sprite.svg#icon-envelope">
-                                </use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380961111111" class="link">
-                            <svg class="icon-header" width="10" height="16">
-                                <use href="./images/svg/sprite.svg#icon-Vector">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
+<header class="header">
+    <div class="container page-header">
+        <a href="./index.html " class="logo-header"> <span class="logo-top">Web</span> Studio</a>
+
+
+
+        <button type="button" aria-controls="menu-container" class="menu-button" data-menu-button>
+            <svg width="40" height="40" aria-label="переключа
+                                            тель мобильного меню" class="burger-btn-icon">
+                <use class="icon-close" href="../images/svg/sprite1.svg#icon-closed" />
+                <use class="icon-menu" href="../images/svg/sprite1.svg#icon-menu" />
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <nav class="nav">
+                <ul class="site-nav">
+                    <li class="item"><a href="./index.html" class="nav-link ">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+                    <li class="item"><a href="#contacts" class="nav-link">Контакты</a></li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="contact-link">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link">
+                        <svg class="icon-header" width="16" height="12">
+                            <use href="./images/svg/sprite.svg#icon-envelope">
+                            </use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="link">
+                        <svg class="icon-header" width="10" height="16">
+                            <use href="./images/svg/sprite.svg#icon-Vector">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
-        </div>
-    </header>
+    </div>
+
+</header>
     <main>
         <section class="portfolio">
             <div class="container">
@@ -258,6 +259,7 @@
                 </div>
             </form>
         </div>
+        <script src="./js/menu.js"></script>
     
     </footer>
     

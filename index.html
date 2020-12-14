@@ -13,24 +13,25 @@
     <header class="header">
       <div class="container page-header">
         <a href="./index.html " class="logo-header"> <span class="logo-top">Web</span> Studio</a>
-        <div class="menu-container">
-          <nav class="nav">
+        
           
-            <button type="button" aria-controls="menu-container" class="burger-btn is-open" data-menu-button>
-              <svg width="24" height="16" aria-label="переключа
-                                    тель мобильного меню" class="burger-btn-icon">
-                <use class="close-burger-icon" href="../images/svg/sprite1.svg#burger-btn" />
-                <use class="burger-icon" href="../images/svg/sprite1.svg#close-burger-btn" />
+    
+            <button type="button" aria-controls="menu-container" class="menu-button" data-menu-button>
+              <svg width="40" height="40" aria-label="переключа
+                                            тель мобильного меню" class="burger-btn-icon">
+                <use class="icon-close" href="../images/svg/sprite1.svg#icon-closed" />
+                <use class="icon-menu" href="../images/svg/sprite1.svg#icon-menu" />
               </svg>
             </button>
-            <div class="menu" id="menu-container" data-menu>
+          <div class="menu-container" id="menu-container" data-menu>
+              <nav class="nav">
               <ul class="site-nav">
                 <li class="item"><a href="./index.html" class="nav-link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="nav-link ">Портфолио</a></li>
                 <li class="item"><a href="#contacts" class="nav-link">Контакты</a></li>
               </ul>
-          </nav>
-          <ul class="contact-link">
+               </nav>
+           <ul class="contact-link">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="link">
                 <svg class="icon-header" width="16" height="12">
@@ -48,10 +49,10 @@
                 </svg>
                 +38 096 111 11 11</a>
             </li>
-          </ul>
-        </div>
-        </div>
+           </ul>
+          </div>
       </div>
+      
     </header>
     <main>
       <section class="hero overlay">
@@ -390,7 +391,7 @@
         </p>
         </form><button class="button-close" data-modal-close>
           <svg class="close-img">
-            <use href="./images/sprite.svg#close-btn" />
+            <use href="./images/svg/sprite.svg#close-btn" />
           </svg>
         </button></div>
        

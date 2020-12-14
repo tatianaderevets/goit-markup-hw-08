@@ -7,23 +7,29 @@
 }
 
 .site-nav {
+  margin: 0;
+  text-align: center;
   @media screen and(min-width:768px) {
     display: flex;
-  }
 
-  .item + .item {
-    margin-left: 50px;
+    .item + .item {
+      margin-left: 50px;
+    }
   }
 }
 
 .nav-link {
   color: $primary-text-color;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
   display: block;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width:768px) {
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {
