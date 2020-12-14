@@ -40,10 +40,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 370px;
     margin-right: 30px;
-    margin-bottom: 30px;
-
+    width: calc((100% - 90px) / 3);
     border: 1px solid #eeeeee;
   }
 
@@ -78,7 +76,7 @@
 }
 
 .item-work:nth-last-child(-n + 3) {
-  @media screen and (min-width: 1200x) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
   }
 }
